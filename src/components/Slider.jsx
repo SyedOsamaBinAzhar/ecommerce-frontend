@@ -32,12 +32,14 @@ const Arrow = styled.div`
     margin : auto;
     opacity : 0.5;
     z-index : 2;
+    border : 1px solid black;
 
 `
 const Wrapper = styled.div`
     height : 100%;
     display : flex;
     transform : translateX(${props => props.slideIndex * -100}vw);
+    transition : all 1s ease
 `
 const Slide = styled.div`
     display : flex;
@@ -45,8 +47,8 @@ const Slide = styled.div`
     height : 100%;
     width : 100vw;
     background-color : ${props => props.bg}
-
 `
+
 const ImgContainer = styled.div`
     flex : 1.5;
     height : 100%;
@@ -103,7 +105,7 @@ const Slider = () => {
         <Wrapper slideIndex = {slideIndex}>
             {
                 sliderItems.map( item => (
-                    <Slide bg="teal">
+                    <Slide bg="#F8F8F8">
                     <ImgContainer>
                         <Image src = {item.img} />
                     </ImgContainer>

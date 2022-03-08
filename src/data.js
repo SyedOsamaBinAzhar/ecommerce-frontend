@@ -1,4 +1,7 @@
 import coverOne from "../src/assets/home/coverOne.jpg";
+import coverTwo from "../src/assets/home/coverTwo.jpg";
+import coverThree from "../src/assets/home/coverThree.jpg";
+
 
 export const sliderItems = [
     {
@@ -10,14 +13,14 @@ export const sliderItems = [
     },
     {
         id : 2,
-        img : coverOne,
+        img : coverTwo,
         title : "WINTER SALE",
         desc : "Get Flat 30% Off On New Arrivals.",
         bg : "f5fafd"
     },
     {
         id : 3,
-        img : coverOne,
+        img : coverThree,
         title : "POPULAR SALE",
         desc : "Get Flat 30% Off On New Arrivals.",
         bg : "f5fafd"
