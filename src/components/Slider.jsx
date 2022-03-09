@@ -4,6 +4,7 @@ import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import coverOne from "../assets/home/coverOne.jpg";
 import { useState } from "react";
 import { sliderItems } from "../data";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
     width : 100%;
@@ -12,6 +13,7 @@ const Container = styled.div`
     position : relative;
     background : #F8F8F8;
     overflow-x : hidden;
+    ${mobile({display : "none"})}
 
 `
 
